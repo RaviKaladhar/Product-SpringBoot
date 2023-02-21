@@ -37,4 +37,5 @@ class ProductIntegrationTests {
 		assertEquals(productController.updateProduct(new ProductDTO(1,"knife","for cutting fruits and vegetables",200.0)).getName(),"knife");
 		assertThrows(ProductException.class,()->productController.updateProduct(new ProductDTO(100,"Cooler","cooling",20000.0)));
 	}
+
 }
